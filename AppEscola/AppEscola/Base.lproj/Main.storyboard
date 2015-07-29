@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,7 +16,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-C2-cyG">
+                                <rect key="frame" x="123" y="382" width="74" height="74"/>
+                                <state key="normal" image="professor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llP-1T-eis">
+                                <rect key="frame" x="123" y="56" width="74" height="74"/>
+                                <state key="normal" image="aluno"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-8L-4M9">
+                                <rect key="frame" x="123" y="221" width="74" height="74"/>
+                                <state key="normal" image="mae"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Aluno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFV-NK-wc0">
+                                <rect key="frame" x="139" y="133" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pai/Mãe/Responsável" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29w-z0-AxQ">
+                                <rect key="frame" x="79" y="303" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Professor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muC-QO-cui">
+                                <rect key="frame" x="123" y="458" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.030736558281422358" green="0.32242036442947186" blue="0.54119318181818188" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="29w-z0-AxQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="2wd-8g-BaQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ox4-8L-4M9" secondAttribute="trailing" constant="103" id="58K-7n-hVc"/>
+                            <constraint firstItem="gFV-NK-wc0" firstAttribute="top" secondItem="llP-1T-eis" secondAttribute="bottom" constant="3" id="CxQ-Ar-zwO"/>
+                            <constraint firstItem="ox4-8L-4M9" firstAttribute="top" secondItem="gFV-NK-wc0" secondAttribute="bottom" constant="67" id="J5W-xr-sfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gFV-NK-wc0" secondAttribute="trailing" constant="116" id="Lbf-cg-uWZ"/>
+                            <constraint firstItem="VxX-C2-cyG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="MM7-pN-web"/>
+                            <constraint firstItem="29w-z0-AxQ" firstAttribute="top" secondItem="ox4-8L-4M9" secondAttribute="bottom" constant="8" id="MVy-Ee-fWO"/>
+                            <constraint firstItem="muC-QO-cui" firstAttribute="top" secondItem="VxX-C2-cyG" secondAttribute="bottom" constant="2" id="NmT-I7-FVE"/>
+                            <constraint firstItem="llP-1T-eis" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="TZX-P3-tXA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="29w-z0-AxQ" secondAttribute="trailing" constant="57" id="Uqj-K8-Qgv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muC-QO-cui" secondAttribute="trailing" constant="103" id="Wkh-Zg-OyE"/>
+                            <constraint firstItem="muC-QO-cui" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="XP0-l7-cZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VxX-C2-cyG" secondAttribute="trailing" constant="103" id="bkp-wc-jci"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="muC-QO-cui" secondAttribute="bottom" constant="89" id="e3X-HQ-JZH"/>
+                            <constraint firstItem="ox4-8L-4M9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="hvM-EE-yav"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="llP-1T-eis" secondAttribute="trailing" constant="103" id="s2G-uj-WA1"/>
+                            <constraint firstItem="llP-1T-eis" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="uiR-q7-vTE"/>
+                            <constraint firstItem="gFV-NK-wc0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="wbr-sp-Sl2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -194,4 +247,9 @@
             <point key="canvasLocation" x="807" y="865"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aluno" width="74" height="74"/>
+        <image name="mae" width="74" height="74"/>
+        <image name="professor" width="74" height="74"/>
+    </resources>
 </document>
