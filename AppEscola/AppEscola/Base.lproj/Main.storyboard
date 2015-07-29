@@ -19,6 +19,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llP-1T-eis">
                                 <rect key="frame" x="150" y="56" width="74" height="74"/>
                                 <state key="normal" image="aluno"/>
+                                <connections>
+                                    <segue destination="Tct-66-vBt" kind="modal" identifier="btAluno" id="LNh-3e-AVG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aluno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFV-NK-wc0">
                                 <rect key="frame" x="165" y="138" width="45" height="21"/>
@@ -29,6 +32,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-8L-4M9">
                                 <rect key="frame" x="150" y="297" width="74" height="74"/>
                                 <state key="normal" image="mae"/>
+                                <connections>
+                                    <segue destination="Tct-66-vBt" kind="modal" identifier="btResponsavel" id="JQ5-wA-cNV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pai/Mãe/Responsável" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29w-z0-AxQ">
                                 <rect key="frame" x="105" y="379" width="164" height="21"/>
@@ -39,6 +45,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-C2-cyG">
                                 <rect key="frame" x="150" y="536" width="74" height="74"/>
                                 <state key="normal" image="professor"/>
+                                <connections>
+                                    <segue destination="Tct-66-vBt" kind="modal" identifier="btProfessor" id="d6K-Nh-NGh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Professor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muC-QO-cui">
                                 <rect key="frame" x="150" y="618" width="74" height="21"/>
@@ -63,11 +72,11 @@
                         <viewControllerLayoutGuide type="bottom" id="nrh-Z1-ciE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FvJ-r7-Mz9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.080857261889808837" green="0.30044470290068476" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" id="CrK-4T-LHU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3T-0W-rUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,4 +241,7 @@
         <image name="mae" width="74" height="74"/>
         <image name="professor" width="74" height="74"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="d6K-Nh-NGh"/>
+    </inferredMetricsTieBreakers>
 </document>
