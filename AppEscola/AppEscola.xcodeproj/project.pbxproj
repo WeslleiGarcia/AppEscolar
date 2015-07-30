@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3101A861B6AECCF006A800D /* ViewControllerQuadroHorario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3101A851B6AECCF006A800D /* ViewControllerQuadroHorario.swift */; };
 		C35370A11B695D7F00D90345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35370A01B695D7F00D90345 /* AppDelegate.swift */; };
 		C35370A31B695D7F00D90345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35370A21B695D7F00D90345 /* ViewController.swift */; };
 		C35370A61B695D7F00D90345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35370A41B695D7F00D90345 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3101A851B6AECCF006A800D /* ViewControllerQuadroHorario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQuadroHorario.swift; sourceTree = "<group>"; };
 		C353709D1B695D7F00D90345 /* AppEscola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEscola.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35370A01B695D7F00D90345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35370A21B695D7F00D90345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				C35370E01B69652200D90345 /* ViewControllerAluno.swift */,
 				C35370D51B6963D600D90345 /* UITableViewControllerFeed.swift */,
 				C35370D31B6963B100D90345 /* TableViewControllerMaterias.swift */,
+				C3101A851B6AECCF006A800D /* ViewControllerQuadroHorario.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				C35370A11B695D7F00D90345 /* AppDelegate.swift in Sources */,
 				C35370DC1B69644F00D90345 /* ViewControllerDetalhesMateria.swift in Sources */,
 				C35370DA1B69642400D90345 /* ViewControllerPerfil.swift in Sources */,
+				C3101A861B6AECCF006A800D /* ViewControllerQuadroHorario.swift in Sources */,
 				C35370DE1B69647700D90345 /* ViewControllerDetalhesFeed.swift in Sources */,
 				C35370D41B6963B100D90345 /* TableViewControllerMaterias.swift in Sources */,
 			);
