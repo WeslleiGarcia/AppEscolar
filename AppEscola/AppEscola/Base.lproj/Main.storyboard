@@ -74,9 +74,64 @@
                     <view key="view" contentMode="scaleToFill" id="FvJ-r7-Mz9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-ph-RmK">
+                                <rect key="frame" x="52" y="200" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matrícula:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DA-w8-fwg">
+                                <rect key="frame" x="39" y="139" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-qk-wRD">
+                                <rect key="frame" x="136" y="135" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9v-RI-BoK">
+                                <rect key="frame" x="136" y="197" width="172" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mij-hG-Hkt">
+                                <rect key="frame" x="20" y="49" width="114" height="30"/>
+                                <state key="normal" title="Escolha o Aluno:"/>
+                                <connections>
+                                    <action selector="btEscolherEscola:" destination="Tct-66-vBt" eventType="touchUpInside" id="3da-KY-WVA"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-1S-zbh">
+                                <rect key="frame" x="142" y="49" width="173" height="30"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDx-c4-Ohn">
+                                        <rect key="frame" x="-131" y="-8" width="445" height="46"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Tct-66-vBt" id="n3T-av-A6P"/>
+                                            <outlet property="delegate" destination="Tct-66-vBt" id="gxt-ho-tc9"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-c9-iP5">
+                                <rect key="frame" x="98" y="269" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.23137254901960785" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Entrar"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.080857261889808837" green="0.30044470290068476" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="CrK-4T-LHU"/>
+                    <connections>
+                        <outlet property="btEscolherEscola" destination="mij-hG-Hkt" id="Bk2-S1-Hdu"/>
+                        <outlet property="pickerViewEscla" destination="ZDx-c4-Ohn" id="clZ-Jk-HEZ"/>
+                        <outlet property="textFieldNome" destination="Z9v-RI-BoK" id="07X-ci-K25"/>
+                        <outlet property="texteFieldMatricula" destination="oc8-qk-wRD" id="DIH-Zg-vQt"/>
+                        <outlet property="viewDropDown" destination="5a4-1S-zbh" id="MNU-0k-Xuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3T-0W-rUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
