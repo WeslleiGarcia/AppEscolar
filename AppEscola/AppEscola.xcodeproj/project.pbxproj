@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3101A861B6AECCF006A800D /* ViewControllerQuadroHorario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3101A851B6AECCF006A800D /* ViewControllerQuadroHorario.swift */; };
+		C33E77641B6C29F300E46253 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33E77631B6C29F300E46253 /* Social.framework */; };
 		C35370A11B695D7F00D90345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35370A01B695D7F00D90345 /* AppDelegate.swift */; };
 		C35370A31B695D7F00D90345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35370A21B695D7F00D90345 /* ViewController.swift */; };
 		C35370A61B695D7F00D90345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35370A41B695D7F00D90345 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		C3101A851B6AECCF006A800D /* ViewControllerQuadroHorario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQuadroHorario.swift; sourceTree = "<group>"; };
+		C33E77631B6C29F300E46253 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C353709D1B695D7F00D90345 /* AppEscola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEscola.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35370A01B695D7F00D90345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35370A21B695D7F00D90345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33E77641B6C29F300E46253 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		C35370941B695D7F00D90345 = {
 			isa = PBXGroup;
 			children = (
+				C33E77631B6C29F300E46253 /* Social.framework */,
 				C353709F1B695D7F00D90345 /* AppEscola */,
 				C35370B71B695D7F00D90345 /* AppEscolaTests */,
 				C35370C21B695D7F00D90345 /* AppEscolaUITests */,
