@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewControllerAluno: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
-    @IBOutlet weak var viewDropDown: UIView!
     
     @IBOutlet weak var btEscolherEscola: UIButton!
 
@@ -18,6 +17,9 @@ class ViewControllerAluno: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var texteFieldMatricula: UITextField!
     
     @IBOutlet weak var textFieldNome: UITextField!
+    
+    @IBOutlet weak var lbAluno: UILabel!
+
     
     var alunos = ["Wesllei", "Kallaham"]
     
@@ -40,14 +42,21 @@ class ViewControllerAluno: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     
     @IBAction func btEscolherEscola(sender: AnyObject) {
-        if viewDropDown.alpha == 1{
-            viewDropDown.alpha = 0
-            viewDropDown.hidden = true
+       // pickerViewEscla.hidden = false
+        //pickerViewEscla.alpha == 0
+        
+        if (pickerViewEscla.alpha == 1){
+            pickerViewEscla.alpha = 0
+             pickerViewEscla.hidden = true
+            lbAluno.hidden = false
         }else{
-            viewDropDown.alpha = 1
-            viewDropDown.hidden = false
+            pickerViewEscla.alpha = 1
+            pickerViewEscla.hidden = false
+            lbAluno.hidden = true
+            
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
